@@ -58,9 +58,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * |------+------+------+------+------+------|                    |------+------+------+------+------+------|
  * |      |  F6  |  F7  |  F8  |  F9  |  F10 |                    |  END | PGDN | N/A  | N/A  | N/A  |  [   |
  * |------+------+------+------+------+------|                    |------+------+------+------+------+------|
- * |RShift|  F11 |  F12 | N/A  | N/A  | PGUP |-------.    ,-------|  N/A |  N/A |  UP  | N/A  | N/A  |   ]  |
+ * |RShift|  F11 |  F12 | N/A  |Ctrl+shift|alt+shift|-------.    ,-------|  N/A |  N/A |  UP  | N/A  | N/A  |   ]  |
  * |------+------+------+------+------+------|MO(LOWER)|  | TG(2) |------+------+------+------+------+------|
- * |RCtrl | N/A  | N/A  | N/A  | N/A  | PGDN |-------|    |-------|  N/A | LEFT | DOWN | RIGHT| N/A  | N/A  |
+ * |RCtrl | N/A  | N/A  | N/A  | N/A  |alt+ctrl|-------|    |-------|  N/A | LEFT | DOWN | RIGHT| N/A  | N/A  |
  * `-----------------------------------------/       /     \      \-----------------------------------------'
  *                   | LAlt | LGUI |Muhenkan|/Space /       \Enter \  |N/A   | N/A  | N/A  |
  *                   |      |      |      |/       /         \      \ |      |      |      |
@@ -69,8 +69,8 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 [_LOWER] = LAYOUT( \
   _______,  KC_F1,   KC_F2,   KC_F3,   KC_F4,   KC_F5,                   KC_HOME, KC_PGUP, XXXXXXX, XXXXXXX, KC_EQL,  KC_JYEN, \
   _______,  KC_F6,   KC_F7,   KC_F8,   KC_F9,   KC_F10,                   KC_END, KC_PGDN, XXXXXXX, XXXXXXX, XXXXXXX, KC_RBRC, \
-  KC_RSFT,  KC_F11,  KC_F12,XXXXXXX, XXXXXXX,  KC_PGUP,                  XXXXXXX, XXXXXXX,   KC_UP, XXXXXXX, XXXXXXX, KC_NUHS, \
-  KC_RCTL, XXXXXXX, XXXXXXX,XXXXXXX, XXXXXXX,  KC_PGDN, _______, _______,XXXXXXX, KC_LEFT, KC_DOWN, KC_RGHT, XXXXXXX, XXXXXXX, \
+  KC_RSFT,  KC_F11,  KC_F12,XXXXXXX,C(KC_RSFT),A(KC_RSFT),                XXXXXXX, XXXXXXX,   KC_UP, XXXXXXX, XXXXXXX, KC_NUHS, \
+  KC_RCTL, XXXXXXX, XXXXXXX,XXXXXXX, XXXXXXX,A(KC_RCTL), _______, _______,XXXXXXX, KC_LEFT, KC_DOWN, KC_RGHT, XXXXXXX, XXXXXXX, \
                              _______, _______, _______, _______, _______,XXXXXXX, XXXXXXX, XXXXXXX\
 ),
 /* RAISE
